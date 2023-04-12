@@ -1,10 +1,14 @@
 import React from 'react';
+import { hand } from '../watch/Watch';
 
 type DigitsPropsType = {
     digit: number
+    typeHand: hand
 }
 
-const Digits = ({digit}:DigitsPropsType) => {
+const Digits = ({digit, typeHand}:DigitsPropsType) => {
+
+    
 
     return (
         <div>

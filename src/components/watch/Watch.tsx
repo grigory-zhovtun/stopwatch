@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import Digits from "../digits/Digits";
 
+export type hand = 'millisecond' | 'microsecond' | 'second' | 'minute';
+
 const Watch = () => {
     const [millisecond, setMillisecond] = useState(0)
     const [microsecond, setMicrosecond] = useState(0)
@@ -39,10 +41,10 @@ const Watch = () => {
    
     return (
         <div>
-            <Digits digit={minute}/>
-            <Digits digit={second}/>
-            <Digits digit={microsecond}/>
-            <Digits digit={millisecond}/>
+            <Digits digit={minute} typeHand='minute'/>
+            <Digits digit={second} typeHand='second'/>
+            <Digits digit={microsecond} typeHand='microsecond'/>
+            <Digits digit={millisecond} typeHand='millisecond'/>
         </div>
     );
 };
