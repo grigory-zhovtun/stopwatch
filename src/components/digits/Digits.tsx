@@ -8,11 +8,20 @@ type DigitsPropsType = {
 
 const Digits = ({digit, typeHand}:DigitsPropsType) => {
 
-    
+    let newDigit = '';
+    if (digit < 10) {
+        newDigit = "0" + digit;
+    } else {
+        newDigit = digit + '';
+    }
+
+    if (typeHand === 'millisecond' && digit < 100) {
+        newDigit = "0" + digit;
+    } 
 
     return (
         <div>
-            {digit < 10 ? "0" + digit: digit}
+            {newDigit}
         </div>
     );
 };

@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import Digits from "../digits/Digits";
 
+import './Watch.css'
+
 export type hand = 'millisecond' | 'microsecond' | 'second' | 'minute';
 
 const Watch = () => {
@@ -40,7 +42,7 @@ const Watch = () => {
     }
    
     return (
-        <div>
+        <div className='wrapper'>
             <Digits digit={minute} typeHand='minute'/>
             <Digits digit={second} typeHand='second'/>
             <Digits digit={microsecond} typeHand='microsecond'/>
