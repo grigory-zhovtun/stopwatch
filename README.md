@@ -1,7 +1,7 @@
-#Stopwatch App
+# Stopwatch App
 A simple stopwatch app built with React.
 
-###Installation
+### Installation
 Clone the repository to your local machine, navigate to the project directory, and run the following command:
 
 
