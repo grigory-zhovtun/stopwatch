@@ -1,3 +1,8 @@
+.digit {
+    background-color: rgb(234, 243, 197);
+    text-align: center;
+}
+
 .minute {
     font-weight: 500;
 }
@@ -13,5 +18,3 @@
 .millisecond {
     font-weight: 200;
 }
-
-/* wght@200;300;400;500 */

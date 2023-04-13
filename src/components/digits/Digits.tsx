@@ -37,7 +37,7 @@ const Digits = ({digit, typeHand}:DigitsPropsType) => {
     } 
 
     return (
-        <div className={styleDigit}>
+        <div className={`${styleDigit} digit`}>
             {newDigit}
         </div>
     );

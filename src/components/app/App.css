@@ -1,8 +1,6 @@
-.wrapper {
+.buttonsWrapper {
     display: grid;
     width: 38%;
     margin: 0 auto;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    font-size: 70px;
-    column-gap: 10px;
 }
